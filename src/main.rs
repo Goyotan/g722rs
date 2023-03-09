@@ -43,6 +43,7 @@ fn main() {
             // copy every 10 bytes
             ibuf.copy_from_slice(&rawdata[i..i+10]);
 
+            // ffi
             g722_decode(g722_dctx, ibuf.as_ptr(), BUF_SIZE as i32, obuf.as_ptr() as *mut i16);
             
             // i16 to u8
