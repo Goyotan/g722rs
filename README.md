@@ -1,2 +1,2 @@
 # g722rs
-libg722 rust implementation
+libg722 rust ffi
